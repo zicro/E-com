@@ -95,6 +95,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.FullHeight{
+  height: 50vh;
+}
+
 a {
   color: inherit;
   text-decoration: none;

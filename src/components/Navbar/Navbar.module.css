@@ -1,6 +1,7 @@
 .links {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .container {
@@ -10,7 +11,3 @@
     align-items: center;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 22px;
-}

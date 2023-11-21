@@ -2,7 +2,7 @@ export const links = [
     {
         id: 1,
         title: "Home",
-        url: "/home",
+        url: "/",
     },
     {
         id: 2,
@@ -23,5 +23,5 @@ export const links = [
         id: 5,
         title: "Contact",
         url: "/contact",
-    },
+    }
 ]

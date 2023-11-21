@@ -2,6 +2,7 @@ import { Inter, Lalezar } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar/Navbar'
 import Footer from '@/components/Footer/Footer'
+import { ThemeProvider } from '@/context/ThemeContext'
 
 const bodyFont = Inter({ subsets: ['latin'] })
 const lalezar = Lalezar({ 
@@ -18,16 +19,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={bodyFont.className}>
-
-        
-        <div className=''>
-        <Navbar />
-        <h1 className={lalezar.className}>
-          محتوى عربي ..
-        </h1>
-        {children}
-        <Footer />
-        </div>
+        <ThemeProvider>
+          <div className='container'>
+          <Navbar />
+          <h1 className={lalezar.className}>
+            محتوى عربي ..
+          </h1>
+          {children}
+          <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )
